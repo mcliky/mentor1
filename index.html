@@ -10,109 +10,11 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="./style.css" />
 
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
-
-    <style>
-      @font-face {
-        font-family: Roboto-Bold;
-        src: url(./assets/fonts/Roboto-Bold.ttf);
-      }
-      @font-face {
-        font-family: Roboto-Regular;
-        src: url(./assets/fonts/Roboto-Regular.ttf);
-      }
-      body {
-        background-color: rgb(54, 56, 77);
-      }
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-      .parent {
-        background-color: #ffffff;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 950px;
-        border-radius: 6%;
-        margin: 230px auto;
-        height: 650px;
-      }
-      .parent h1 {
-        font-family: Roboto-Bold;
-        font-size: 50px;
-        color: hsl(234, 29%, 20%);
-      }
-      .formContainer {
-        margin-left: 50px;
-      }
-      .formContainer p {
-        font-size: 16px;
-        font-family: Roboto-Regular;
-        color: hsl(234, 29%, 20%);
-      }
-      button {
-        border-radius: 10px;
-        width: 355px;
-        height: 60px;
-        background-color: hsl(234, 29%, 20%);
-        color: white;
-        font-size: 16px;
-        font-family: Roboto-Bold;
-      }
-      .email label {
-        font-size: 16px;
-        font-family: Roboto-Bold;
-        color: hsl(234, 29%, 20%);
-      }
-      .email input {
-        border-radius: 10px;
-        border: 1px black solid;
-        border-color: rgba(0, 0, 0, 0.5);
-        width: 350px;
-        height: 50px;
-        font-size: 16px;
-        font-family: Roboto-Regular;
-        color: hsl(234, 29%, 20%);
-        padding-left: 20px;
-      }
-      .text {
-        position: relative;
-        top: -5px;
-      }
-      .imageContainer {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 30px;
-      }
-      .imageContainer img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      .email input.invalid {
-        border-color: hsl(4, 100%, 67%);
-        background-color: #ffe8e6;
-      }
-
-      .invalid-message {
-        color: hsl(4, 100%, 67%);
-        display: none;
-      }
-
-      .email label {
-        display: flex;
-        align-items: center;
-      }
-    </style>
   </head>
   <body>
     <!-- Sign-up form start -->
@@ -147,7 +49,7 @@
           <label for="email"
             >Email address
             <span id="invalid-message" class="invalid-message"
-              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Valid
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Valid
               email required</span
             > </label
           ><br /><br />

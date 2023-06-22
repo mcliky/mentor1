@@ -1,0 +1,144 @@
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+body {
+  background-color: rgb(54, 56, 77);
+  margin: 0;
+  padding: 0;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.parent {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 950px;
+  border-radius: 6%;
+  margin: 230px auto;
+  height: 650px;
+}
+.parent h1 {
+  font-family: Roboto-Bold;
+  font-size: 50px;
+  color: hsl(234, 29%, 20%);
+}
+.formContainer {
+  margin-left: 50px;
+}
+.formContainer p {
+  font-size: 16px;
+  font-family: Roboto-Regular;
+  color: hsl(234, 29%, 20%);
+}
+button {
+  border-radius: 10px;
+  width: 374px;
+  height: 60px;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-size: 16px;
+  font-family: Roboto-Bold;
+}
+.email label {
+  font-size: 16px;
+  font-family: Roboto-Bold;
+  color: hsl(234, 29%, 20%);
+}
+.email input {
+  border-radius: 10px;
+  border: 1px black solid;
+  border-color: rgba(0, 0, 0, 0.5);
+  width: 350px;
+  height: 50px;
+  font-size: 16px;
+  font-family: Roboto-Regular;
+  color: hsl(234, 29%, 20%);
+  padding-left: 20px;
+}
+.text {
+  position: relative;
+  top: -5px;
+}
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+}
+.imageContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.email input.invalid {
+  border-color: hsl(4, 100%, 67%);
+  background-color: #ffe8e6;
+}
+
+.invalid-message {
+  color: hsl(4, 100%, 67%);
+  display: none;
+}
+
+.email label {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-color: #ffffff;
+    width: 100%;
+    height: 20%;
+  }
+  .parent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .formContainer {
+    order: 2;
+    margin-bottom: 20px;
+    text-align: start;
+    padding-right: 50px;
+    width: 100%;
+  }
+
+  .formContainer h1 {
+    font-size: 200%;
+  }
+
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0; /* Adjust the height value as desired */
+  }
+
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Adjust the object-fit property as desired */
+  }
+}
