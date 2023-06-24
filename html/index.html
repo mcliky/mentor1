@@ -8,9 +8,9 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
+      href="../assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
@@ -28,19 +28,25 @@
         </p>
 
         <p>
-          <span><img src="./assets/images/icon-list.svg" alt="success" /></span>
+          <span
+            ><img src="../assets/images/icon-list.svg" alt="success"
+          /></span>
           <span class="text"
             >&nbsp;&nbsp;&nbsp;Product discovery and building what matters</span
           >
         </p>
         <p>
-          <span><img src="./assets/images/icon-list.svg" alt="success" /></span>
+          <span
+            ><img src="../assets/images/icon-list.svg" alt="success"
+          /></span>
           <span class="text"
             >&nbsp;&nbsp;&nbsp;Measuring to ensure updates are a success</span
           >
         </p>
         <p>
-          <span><img src="./assets/images/icon-list.svg" alt="success" /></span>
+          <span
+            ><img src="../assets/images/icon-list.svg" alt="success"
+          /></span>
           <span class="text">&nbsp;&nbsp;&nbsp;And much more!</span>
         </p>
         <br />
@@ -63,11 +69,13 @@
           />
         </form>
         <br />
-        <button>Subscribe to monthly newsletter</button>
+        <button id="submitButton" onclick="validateEmailAndRedirect()">
+          Subscribe to monthly newsletter
+        </button>
       </div>
       <div class="imageContainer">
         <img
-          src="./assets/images/illustration-sign-up-desktop.svg"
+          src="../assets/images/illustration-sign-up-desktop.svg"
           alt="desktop"
         />
       </div>
@@ -92,6 +100,17 @@
         } else {
           email.className = "";
           invalidMessage.style.display = "none";
+        }
+      }
+
+      function validateEmailAndRedirect() {
+        var email = document.getElementById("email");
+        var emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+
+        if (email.value.match(emailRegex)) {
+          window.location.href = "./thanks.html";
+        } else {
+          validateEmail();
         }
       }
     </script>
